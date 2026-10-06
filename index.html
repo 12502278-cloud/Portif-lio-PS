@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paula Santos | Portfólio</title>
+<meta name="description" content="Portfólio de Paula Santos — Estudante de Tecnologia e Professora de Informática.">
+
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <span class="logo">Ps</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro"><img id="themeIcon" src="lua-crescente.png" alt=""></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<section id="inicio" class="hero container">
+  <h1>Paula Santos</h1>
+  <p class="role-line" id="roleLine" aria-live="polite"></p>
+
+  <div id="sobre">
+    <p class="about">
+      Sou estudante do Ensino Médio Técnico no COTEMIG e venho construindo minha trajetória na área de
+      tecnologia por meio de estudos, cursos e experiências profissionais. Tenho interesse em informática,
+      desenvolvimento web e cibersegurança, e gosto de transformar novos conhecimentos em projetos e
+      experiências práticas.
+    </p>
+  </div>
+
+  <div class="tag-list">
+    <span class="tag-pill">HTML</span>
+    <span class="tag-pill">CSS</span>
+    <span class="tag-pill">Pacote Office</span>
+    <span class="tag-pill">Cibersegurança</span>
+    <span class="tag-pill">Google Workspace</span>
+    <span class="tag-pill">Hardware</span>
+  </div>
+</section>
+
+<section id="projetos" class="band container">
+  <div class="section-title-row">
+    <h2>Meus projetos</h2>
+    <a class="github-badge" href="https://github.com/12502278-cloud" target="_blank" rel="noopener">
+      github.com/12502278-cloud
+    </a>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card" data-reveal>
+      <h3>Tabela Periódica</h3>
+      <p>Projeto para representar visualmente a Tabela Periódica.</p>
+      <span class="tech-label">Tecnologias: HTML • CSS</span>
+    </article>
+
+    <article class="project-card" data-reveal>
+      <h3>Grão Nobre</h3>
+      <p>Projeto para apresentar uma marca de cafés especiais por meio de uma landing page moderna e elegante.</p>
+      <span class="tech-label">Tecnologias: HTML • CSS</span>
+    </article>
+
+    <article class="project-card" data-reveal>
+      <h3>Bella Rosa</h3>
+      <p>Projeto para desenvolver uma landing page com design moderno e apresentação visual de uma marca.</p>
+      <span class="tech-label">Tecnologias: HTML • CSS</span>
+    </article>
+
+    <article class="project-card" data-reveal>
+      <h3>Site Position</h3>
+      <p>Projeto para praticar a criação e organização de layouts utilizando posicionamento de elementos.</p>
+      <span class="tech-label">Tecnologias: HTML • CSS</span>
+    </article>
+  </div>
+</section>
+
+<section id="contato" class="band band-alt">
+  <div class="container contact-grid">
+    <div class="contact-info" data-reveal>
+      <h2>Entre em contato comigo</h2>
+      <p>Tem alguma dúvida, proposta ou oportunidade? Entre em contato comigo! Estou sempre aberta a novos
+        projetos, ideias e oportunidades para aprender e crescer profissionalmente.</p>
+      <p>Fique à vontade para me enviar uma mensagem. Será um prazer falar com você!</p>
+      <div class="contact-links">
+        <a href="mailto:rossanipaula82@gmail.com">rossanipaula82@gmail.com</a>
+        <a href="https://github.com/12502278-cloud" target="_blank" rel="noopener">GitHub: 12502278-cloud</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate data-reveal>
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        <small class="error" id="err-nome"></small>
+      </div>
+
+      <div class="field">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(31) 98909-3439" inputmode="numeric" required>
+        <small class="error" id="err-telefone"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        <small class="error" id="err-email"></small>
+      </div>
+
+      <div class="field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+        <small class="error" id="err-mensagem"></small>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar mensagem</button>
+    </form>
+  </div>
+</section>
+
+<section id="habilidades" class="band container">
+  <h2 style="margin-bottom: 32px;">Qualificações e habilidades</h2>
+
+  <div class="qual-list">
+    <div class="qual-card" data-reveal>
+      <h3>Desenvolvimento Web</h3>
+      <p>Criação de sites e páginas web modernas, funcionais e responsivas.</p>
+    </div>
+
+    <div class="qual-card nested" data-reveal>
+      <h3>Landing Pages</h3>
+      <p>Desenvolvimento de páginas para apresentar marcas, produtos e serviços de forma atrativa.</p>
+    </div>
+
+    <div class="qual-card" data-reveal>
+      <h3>HTML e CSS</h3>
+      <p>Criação e estilização de interfaces utilizando HTML e CSS, com foco em organização e design.</p>
+    </div>
+
+    <div class="qual-card nested" data-reveal>
+      <h3>Design Responsivo</h3>
+      <p>Adaptação de sites para diferentes tamanhos de tela, como computadores, tablets e celulares.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="foot-name">Paula Santos</p>
+    <p class="foot-role">Estudante de Tecnologia | Professora de Informática</p>
+    <div class="foot-links">
+      <a href="https://github.com/12502278-cloud" target="_blank" rel="noopener">12502278-cloud</a>
+      <a href="mailto:rossanipaula82@gmail.com">rossanipaula82@gmail.com</a>
+      <span>(31) 98909-3439</span>
+    </div>
+    <p class="copyright">© 2026 Paula Santos</p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <div class="modal-icon">✓</div>
+    <h3 id="modalTitle">Mensagem enviada!</h3>
+    <p>Obrigada pelo contato. Vou responder assim que possível.</p>
+    <button class="modal-close" id="modalClose">Fechar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
